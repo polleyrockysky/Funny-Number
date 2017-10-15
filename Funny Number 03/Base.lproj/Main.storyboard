@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Funny_Number_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDp-Ww-sZ2">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Home" id="GDB-GL-DVy">
+                                        <barButtonItem key="rightBarButtonItem" image="ic_keyboard_arrow_right_white_48pt.png" id="qoP-zn-FPE"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="if_bulldog_45354.png" translatesAutoresizingMaskIntoConstraints="NO" id="iE0-jl-12M">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DDp-Ww-sZ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YsP-2r-l6D"/>
+                            <constraint firstAttribute="trailing" secondItem="DDp-Ww-sZ2" secondAttribute="trailing" id="i1d-7I-yKM"/>
+                            <constraint firstItem="DDp-Ww-sZ2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="otl-Ao-9xz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--NumberFunny-->
+        <scene sceneID="E69-LA-zY3">
+            <objects>
+                <viewController title="NumberFunny" id="JOG-83-yed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOI-eL-Duy"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJp-oT-oK8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iZX-Rw-1eN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNL-y7-GD1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Number Funny" id="1k8-oT-4Jh">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_white_48pt.png" id="Dml-D6-3K8"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bz9-v1-J9S">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="ic_keyboard_arrow_left_white_48pt.png" id="0RV-sW-Gg3"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="v5Q-3b-USw"/>
+                                    <barButtonItem title="Start" id="eJy-9s-pMK"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gsH-Ze-aGW"/>
+                                    <barButtonItem image="ic_keyboard_arrow_right_white_48pt.png" id="ZBA-6k-n2z"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-aN-x9v">
+                                <rect key="frame" x="143" y="214" width="89" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nvr-aN-x9v" firstAttribute="centerX" secondItem="iZX-Rw-1eN" secondAttribute="centerX" id="API-JK-Ypy"/>
+                            <constraint firstItem="tNL-y7-GD1" firstAttribute="top" secondItem="AOI-eL-Duy" secondAttribute="bottom" constant="8" id="Gx0-1y-9uM"/>
+                            <constraint firstItem="nvr-aN-x9v" firstAttribute="centerX" secondItem="iZX-Rw-1eN" secondAttribute="centerX" id="LzR-kN-4u6"/>
+                            <constraint firstItem="tNL-y7-GD1" firstAttribute="leading" secondItem="iZX-Rw-1eN" secondAttribute="leading" id="NfM-yf-vV0"/>
+                            <constraint firstItem="nvr-aN-x9v" firstAttribute="centerY" secondItem="iZX-Rw-1eN" secondAttribute="centerY" id="WWa-lj-dUI"/>
+                            <constraint firstItem="nvr-aN-x9v" firstAttribute="centerY" secondItem="iZX-Rw-1eN" secondAttribute="centerY" id="bIC-9p-B4y"/>
+                            <constraint firstItem="nvr-aN-x9v" firstAttribute="centerX" secondItem="iZX-Rw-1eN" secondAttribute="centerX" id="kX9-Kd-XX7"/>
+                            <constraint firstAttribute="trailing" secondItem="tNL-y7-GD1" secondAttribute="trailing" id="scX-qH-7UX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtP-ON-oGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_keyboard_arrow_left_white_48pt.png" width="48" height="48"/>
+        <image name="ic_keyboard_arrow_right_white_48pt.png" width="48" height="48"/>
+        <image name="if_bulldog_45354.png" width="128" height="128"/>
+    </resources>
+</document>
