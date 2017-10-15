@@ -25,7 +25,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Home" id="GDB-GL-DVy">
-                                        <barButtonItem key="rightBarButtonItem" image="ic_keyboard_arrow_right_white_48pt.png" id="qoP-zn-FPE"/>
+                                        <barButtonItem key="rightBarButtonItem" image="ic_keyboard_arrow_right_white_48pt.png" id="qoP-zn-FPE">
+                                            <connections>
+                                                <segue destination="JOG-83-yed" kind="show" id="HRx-Cu-yJ9"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -48,7 +52,7 @@
         <!--NumberFunny-->
         <scene sceneID="E69-LA-zY3">
             <objects>
-                <viewController title="NumberFunny" id="JOG-83-yed" sceneMemberID="viewController">
+                <viewController title="NumberFunny" id="JOG-83-yed" customClass="NumberViewController" customModule="Funny_Number_03" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AOI-eL-Duy"/>
                         <viewControllerLayoutGuide type="bottom" id="DJp-oT-oK8"/>
@@ -61,7 +65,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Number Funny" id="1k8-oT-4Jh">
-                                        <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_white_48pt.png" id="Dml-D6-3K8"/>
+                                        <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_white_48pt.png" id="Dml-D6-3K8">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="IJz-qR-cAR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -69,11 +77,23 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem image="ic_keyboard_arrow_left_white_48pt.png" id="0RV-sW-Gg3"/>
+                                    <barButtonItem image="ic_keyboard_arrow_left_white_48pt.png" id="0RV-sW-Gg3">
+                                        <connections>
+                                            <action selector="increaseButton:" destination="JOG-83-yed" id="VI8-Dn-0bW"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="v5Q-3b-USw"/>
-                                    <barButtonItem title="Start" id="eJy-9s-pMK"/>
+                                    <barButtonItem title="Start" id="eJy-9s-pMK">
+                                        <connections>
+                                            <action selector="settupButton:" destination="JOG-83-yed" id="dJC-mv-e4O"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="gsH-Ze-aGW"/>
-                                    <barButtonItem image="ic_keyboard_arrow_right_white_48pt.png" id="ZBA-6k-n2z"/>
+                                    <barButtonItem image="ic_keyboard_arrow_right_white_48pt.png" id="ZBA-6k-n2z">
+                                        <connections>
+                                            <action selector="decreaseButton:" destination="JOG-83-yed" id="PsJ-e1-68Q"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-aN-x9v">
@@ -95,10 +115,14 @@
                             <constraint firstAttribute="trailing" secondItem="tNL-y7-GD1" secondAttribute="trailing" id="scX-qH-7UX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OEx-DW-50R"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="nvr-aN-x9v" id="4g3-eQ-lvi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtP-ON-oGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="38"/>
+            <point key="canvasLocation" x="804" y="38"/>
         </scene>
     </scenes>
     <resources>

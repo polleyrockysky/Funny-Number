@@ -20,6 +20,8 @@
 		CEFC146E1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC146B1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_2x.png */; };
 		CEFC146F1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC146C1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_3x.png */; };
 		CEFC14701F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC146D1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt.png */; };
+		CEFC14721F9356380020BF29 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC14711F9356380020BF29 /* NumberViewController.swift */; };
+		CEFC14741F9359590020BF29 /* myUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC14731F9359590020BF29 /* myUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CEFC146B1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_white_48pt_2x.png; sourceTree = "<group>"; };
 		CEFC146C1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_white_48pt_3x.png; sourceTree = "<group>"; };
 		CEFC146D1F9350830020BF29 /* ic_keyboard_arrow_left_white_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_white_48pt.png; sourceTree = "<group>"; };
+		CEFC14711F9356380020BF29 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		CEFC14731F9359590020BF29 /* myUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				CEFC14611F934DE00020BF29 /* ic_keyboard_arrow_right_white_48pt.png */,
 				CEFC14541F934CA40020BF29 /* LaunchScreen.storyboard */,
 				CEFC14571F934CA40020BF29 /* Info.plist */,
+				CEFC14711F9356380020BF29 /* NumberViewController.swift */,
+				CEFC14731F9359590020BF29 /* myUtility.swift */,
 			);
 			path = "Funny Number 03";
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFC14741F9359590020BF29 /* myUtility.swift in Sources */,
+				CEFC14721F9356380020BF29 /* NumberViewController.swift in Sources */,
 				CEFC144E1F934CA40020BF29 /* ViewController.swift in Sources */,
 				CEFC144C1F934CA40020BF29 /* AppDelegate.swift in Sources */,
 			);
